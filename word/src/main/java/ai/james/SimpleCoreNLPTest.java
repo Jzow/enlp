@@ -31,18 +31,16 @@ public class SimpleCoreNLPTest {
 
         CoreDocument document = pipeline.processToCoreDocument("data");
 
-        List<String> words = new ArrayList<>();
-        List<String> tags = new ArrayList<>();
+        List<Word> words = new ArrayList<>();
         for (CoreLabel tok : document.tokens()) {
-            words.add(tok.word());
-            tags.add(tok.tag());
+            Word word = new Word();
+            word.setWord(tok.word());
+            word.setWordType(tok.tag());
+            words.add(word);
         }
 
-        for (String word : words) {
-            System.out.println(word);
-        }
-        for (String tag : tags) {
-            System.out.println(tag);
+        for (Word word : words) {
+            System.out.println("原词：" + word.getWord() + "————词性：" + word.getWordType());
         }
     }
 }
