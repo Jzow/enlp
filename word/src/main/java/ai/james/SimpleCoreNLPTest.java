@@ -29,7 +29,10 @@ public class SimpleCoreNLPTest {
 
         StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
 
-        CoreDocument document = pipeline.processToCoreDocument("data");
+        FileUtils fileUtils = new FileUtils();
+        String data = fileUtils.readTxtFile("\\swordcome\\word\\src\\main\\resources", "test-data-1.txt");
+
+        CoreDocument document = pipeline.processToCoreDocument(data);
 
         List<Word> words = new ArrayList<>();
         for (CoreLabel tok : document.tokens()) {
