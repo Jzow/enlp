@@ -30,7 +30,7 @@ public class SimpleCoreNLPTest {
         StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
 
         FileUtils fileUtils = new FileUtils();
-        String data = fileUtils.readTxtFile("\\swordcome\\word\\src\\main\\resources", "test-data-1.txt");
+        String data = fileUtils.readTxtFile("../swordcome/word/src/main/resources", "test-data-1.txt");
 
         CoreDocument document = pipeline.processToCoreDocument(data);
 
