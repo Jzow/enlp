@@ -1,7 +1,6 @@
 # Sword Come
 
-For English vocabulary analysis and sentence analysis in natural language, model training, 
-intelligent response and emotion analysis are carried out through the analyzed data
+:rainbow:For English vocabulary analysis and sentence analysis in natural language, model training, intelligent response and emotion analysis reasoning are carried out through the analysis of data :)
 
 
 ## :pushpin: Stanford part of speech description
