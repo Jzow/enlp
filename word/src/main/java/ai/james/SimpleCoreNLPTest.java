@@ -17,17 +17,12 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
-
 
 public class SimpleCoreNLPTest {
 
     public static void main(String[] args) throws Exception {
 
-        Properties properties = new Properties();
-        properties.setProperty("annotators", "tokenize,ssplit,pos");
-
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(properties);
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(PropertiesFactory.Companion.setAnnotator("annotators", AnnotatorConstants.depparse));
 
         FileUtils fileUtils = new FileUtils();
         String data = fileUtils.readTxtFile("../swordcome/word/src/main/resources", "test-data-1.txt");
