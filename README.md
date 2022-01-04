@@ -1,7 +1,10 @@
 # Sword Come
 
-English lexical analysis and sentence analysis through natural language
+For English vocabulary analysis and sentence analysis in natural language, model training, 
+intelligent response and emotion analysis are carried out through the analyzed data
 
+
+## Stanford part of speech description
 ```markdown
 ROOT：要处理文本的语句
 IP：简单从句
