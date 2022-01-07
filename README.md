@@ -2,8 +2,11 @@
 
 :rainbow:For English vocabulary analysis and sentence analysis in natural language, model training, intelligent response and emotion analysis reasoning are carried out through the analysis of data :)
 
+## :pushpin: FAQ
 
-## :pushpin: <summary> Stanford part of speech description </summary>
+<details> 
+ <summary> <b>Stanford part of speech description</b> </summary>
+ 
 ```markdown
 ROOT：要处理文本的语句
 IP：简单从句
@@ -169,3 +172,4 @@ tclaus — 时间从句 （以后，积累）
        — semantic dependent
    cpm — 补语化成分（complementizer），一般指“的”引导的CP （振兴，的）
 ```
+</details>
