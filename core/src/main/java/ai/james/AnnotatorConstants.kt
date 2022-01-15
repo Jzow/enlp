@@ -16,9 +16,9 @@ interface AnnotatorConstants {
         companion object {
             const val pos: String = "tokenize,ssplit";
 
-            const val lemma: String = "tokenize,ssplit,pos";
+            const val ner: String = "tokenize,ssplit,pos";
 
-            const val ner: String = "tokenize,ssplit,pos,lemma";
+            const val lemma: String = "tokenize,ssplit,pos,lemma";
 
             const val regexner: String = "tokenize,ssplit,pos";
 
