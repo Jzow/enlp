@@ -22,7 +22,7 @@ public class WordCoreNLPTest {
 
     public static void main(String[] args) throws Exception {
 
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(PropertiesFactory.Companion.setAnnotator("annotators", AnnotatorConstants.depparse));
+        StanfordCoreNLP pipeline = new StanfordCoreNLP(PropertiesFactory.Companion.setAnnotator("annotators", AnnotatorConstants.lemma));
 
         FileUtils fileUtils = new FileUtils();
         String data = fileUtils.readTxtFile("../swordcome/word/src/main/resources", "test-data-1.txt");
@@ -33,12 +33,13 @@ public class WordCoreNLPTest {
         for (CoreLabel tok : document.tokens()) {
             Word word = new Word();
             word.setWord(tok.word());
+            word.setLemmaWord(tok.lemma());
             word.setWordType(tok.tag());
             words.add(word);
         }
 
         for (Word word : words) {
-            System.out.println("原词：" + word.getWord() + "————词性：" + word.getWordType());
+            System.out.println("原词：" + word.getWord() + "————还原词：" + word.getLemmaWord() + "————词性：" + word.getWordType());
         }
     }
 }

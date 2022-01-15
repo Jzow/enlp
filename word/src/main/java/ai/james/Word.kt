@@ -13,5 +13,6 @@ package ai.james
 
 class Word {
     var word : String = "";
+    var lemmaWord : String ?= "";
     var wordType : String = "";
 }
