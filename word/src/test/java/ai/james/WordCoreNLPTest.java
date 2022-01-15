@@ -18,7 +18,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleCoreNLPTest {
+public class WordCoreNLPTest {
 
     public static void main(String[] args) throws Exception {
 
