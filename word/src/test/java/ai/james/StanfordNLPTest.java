@@ -22,12 +22,11 @@ public class WordCoreNLPTest {
 
     public static void main(String[] args) throws Exception {
 
-        StanfordCoreNLP pipeline = new StanfordCoreNLP(PropertiesFactory.Companion.setAnnotator("annotators", AnnotatorConstants.lemma));
-
         FileUtils fileUtils = new FileUtils();
         String data = fileUtils.readTxtFile("../swordcome/word/src/main/resources", "test-data-1.txt");
 
-        CoreDocument document = pipeline.processToCoreDocument(data);
+        CoreDocument document = new StanfordCoreNLP(PropertiesFactory.Companion.setAnnotator("annotators", AnnotatorConstants.lemma))
+                .processToCoreDocument(data);
 
         List<Word> words = new ArrayList<>();
         for (CoreLabel tok : document.tokens()) {
