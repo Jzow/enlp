@@ -1,0 +1,57 @@
+server:
+  port: 6006
+  servlet:
+    context-path: /correctionService
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: correction-service
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.132.74.137:8848
+        username: nacos
+        password: iston123456~!
+
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 100MB
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: always
+    property-naming-strategy: SNAKE_CASE
+
+  datasource:
+    druid:
+      url: jdbc:mysql://139.196.185.136:3306/alfa_algorithm_database?characterEncoding=UTF-8
+      username: root
+      password: Pe1fpDw%
+
+# 持久层配置
+mybatis-plus:
+  global-config:
+    db-config:
+      #主键类型
+      id-type: ASSIGN_ID
+      # 逻辑删除字段
+      logic-delete-field: del_flag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  # 枚举包扫描
+  # type-enums-package: ai.iston.common.enums
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+com:
+  prop:
+    upload-path: http://139.196.185.136:8008/group1/upload
+
+logging:
+  config: classpath:logback-spring.xml
