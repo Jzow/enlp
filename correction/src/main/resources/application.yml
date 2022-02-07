@@ -13,9 +13,9 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 101.132.74.137:8848
+        server-addr: localhost:8848
         username: nacos
-        password: iston123456~!
+        password: nacos123456
 
   servlet:
     multipart:
@@ -30,9 +30,9 @@ spring:
 
   datasource:
     druid:
-      url: jdbc:mysql://139.196.185.136:3306/alfa_algorithm_database?characterEncoding=UTF-8
+      url: jdbc:mysql://localhost:3306/alfa_algorithm_database?characterEncoding=UTF-8
       username: root
-      password: Pe1fpDw%
+      password: 123456
 
 # 持久层配置
 mybatis-plus:
@@ -51,7 +51,7 @@ mybatis-plus:
 
 com:
   prop:
-    upload-path: http://139.196.185.136:8008/group1/upload
+    upload-path: http://localhost:8008/group1/upload
 
 logging:
   config: classpath:logback-spring.xml
