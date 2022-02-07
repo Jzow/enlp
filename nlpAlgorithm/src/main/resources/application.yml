@@ -1,0 +1,40 @@
+server:
+  port: 6005
+  servlet:
+    context-path: /javaAlgorithmService
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: java-algorithm-service
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 101.132.74.137:8848
+        username: nacos
+        password: iston123456~!
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+  datasource:
+    druid:
+      url: jdbc:mysql://139.196.185.136:3306/alfa_algorithm_database?characterEncoding=UTF-8
+      username: root
+      password: Pe1fpDw%
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 150000
+        loggerLevel: basic
+
+logging:
+  config: classpath:logback-spring.xml
