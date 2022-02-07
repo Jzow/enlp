@@ -2,6 +2,7 @@ package ai.james;
 
 import edu.stanford.nlp.pipeline.AnnotationPipeline;
 import edu.stanford.nlp.pipeline.AnnotatorPool;
+import edu.stanford.nlp.pipeline.CoreDocument;
 import edu.stanford.nlp.util.PropertiesUtils;
 
 import java.util.Properties;
@@ -13,4 +14,7 @@ import java.util.Properties;
  */
 public class CoreNLP extends AnnotationPipeline {
 
+    public CoreNLP(){}
+
+    public CoreNLP(Properties properties){}
 }
