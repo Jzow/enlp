@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="ai.iston.dao.mapper.CorrectionModuleMapper">
+<mapper namespace="ai.james.dao.mapper.CorrectionModuleMapper">
 
 
-    <select id="matchVocabularyData" resultType="ai.iston.model.entity.PubWorlds" parameterType="java.util.Map">
+    <select id="matchVocabularyData" resultType="ai.james.model.entity.PubWorlds" parameterType="java.util.Map">
         select word, word_type, word_hvc_level, word_category
         from pub_worlds
         where word_type = #{wordType}

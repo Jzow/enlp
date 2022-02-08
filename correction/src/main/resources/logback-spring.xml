@@ -147,7 +147,7 @@
     </appender>
 
     <springProfile name="dev">
-        <logger name="ai.iston" level="debug"/>
+        <logger name="ai.james" level="debug"/>
     </springProfile>
 
     <root level="info">

@@ -119,7 +119,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.6.2</version>
                 <configuration>
-                    <mainClass>ai.iston.nlpAlgorithmApplication</mainClass>
+                    <mainClass>ai.james.nlpAlgorithmApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
