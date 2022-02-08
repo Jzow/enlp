@@ -13,9 +13,9 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: localhost:8848
+        server-addr: localhost
         username: nacos
-        password: nacos123456
+        password: nacos
 
   servlet:
     multipart:
@@ -24,9 +24,9 @@ spring:
 
   datasource:
     druid:
-      url: jdbc:mysql:/localhost:3306/test_database?characterEncoding=UTF-8
+      url: jdbc:mysql://localhost:3306/tencent?characterEncoding=UTF-8
       username: root
-      password: 123456
+      password: zw123456~!
 
 feign:
   client:
