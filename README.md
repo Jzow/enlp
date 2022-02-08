@@ -32,7 +32,7 @@
 21.	RBR	比较副词
 22.	RBS	最高级副词
 23.	RP	Particle
-24.	SYM	Symbol
+24.	SYM	Symbol符号
 25.	TO	to
 26.	UH	感叹词
 27.	VB	动词，基本形式
