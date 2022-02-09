@@ -1,10 +1,10 @@
 # Sword Come
 
-:rainbow:
+## :rainbow: What am I doing
 
-Phase I：English vocabulary analysis and sentence analysis in natural language
+Phase I：English vocabulary analysis and sentence analysis in natural language **(under development)**
 
-Phase II：Model training, intelligent response and emotion analysis reasoning are carried out through the analysis of data :)
+Phase II：Model training, intelligent response and emotion analysis reasoning are carried out through the analysis of data :) **(future)**
 
 
 ## :pushpin: General English label description
