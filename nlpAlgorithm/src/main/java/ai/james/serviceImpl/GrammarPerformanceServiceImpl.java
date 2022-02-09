@@ -16,13 +16,11 @@ import edu.stanford.nlp.trees.Constituent;
 import edu.stanford.nlp.trees.LabeledScoredConstituentFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -40,19 +38,20 @@ public class GrammarPerformanceServiceImpl implements GrammarPerformanceService 
         StanfordCoreNLP pipeline = new StanfordCoreNLP(PropertiesFactory.Companion.setAnnotator("annotators", AnnotatorConstants.ner));
         articleList.forEach(item -> {
             CoreDocument document = pipeline.processToCoreDocument(item.getArticle());
-            grammarPerformance(resultObj, document.sentences());
+            resultObj.put("grammar_performance", grammarPerformance(document.sentences()));
         });
-        System.err.println(resultObj);
-        return null;
+        System.out.println(resultObj);
+        return JSONObject.parseObject(String.valueOf(resultObj), GrammarInfoVo.class);
     }
 
     /**
      * 语法表现
-     * @param resultObj 拼装的obj对象
      * @param sentences 分句集合
      */
-    private void grammarPerformance(JSONObject resultObj, List<CoreSentence> sentences){
-        simpleAndComplexSentenceRecognition(resultObj, sentences);
+    private JSONObject grammarPerformance(List<CoreSentence> sentences){
+        JSONObject resultObj = new JSONObject();
+        resultObj.put("sentence_classification", simpleAndComplexSentenceRecognition(sentences));
+        return resultObj;
     }
 
     /**
@@ -60,14 +59,16 @@ public class GrammarPerformanceServiceImpl implements GrammarPerformanceService 
      * @param sentences 句子集合
      * @return 返回简单句复杂句
      */
-    private void simpleAndComplexSentenceRecognition(JSONObject resultObj, List<CoreSentence> sentences){
+    private JSONArray simpleAndComplexSentenceRecognition(List<CoreSentence> sentences){
         JSONArray simpleAndComplexArray = new JSONArray();
         JSONObject simpleObject = new JSONObject(), complexObject = new JSONObject();
 
-        List<String> clauseList = findClause(sentences),  nonPredicateList = findNonPredicate(sentences);
-        List<String> simpleList = new ArrayList<>(), complexList = new ArrayList<>(), specialStructureList = new ArrayList<>();
+        List<String> clauseList = findClause(sentences),  nonPredicateList = findNonPredicate(sentences), specialStructureLis = findSpecialStructure(sentences);
+        List<String> simpleList = new ArrayList<>(), complexList = new ArrayList<>();
         sentences.forEach(item -> {
             if (clauseList.contains(item.text())) {
+                complexList.add(item.text());
+            } else if(specialStructureLis.contains(item.text())){
                 complexList.add(item.text());
             } else {
                 boolean include = false;
@@ -98,7 +99,7 @@ public class GrammarPerformanceServiceImpl implements GrammarPerformanceService 
         simpleAndComplexArray.add(simpleObject);
         simpleAndComplexArray.add(complexObject);
 
-        resultObj.put("sentence_classification", simpleAndComplexArray);
+        return simpleAndComplexArray;
     }
 
     /**
@@ -158,8 +159,20 @@ public class GrammarPerformanceServiceImpl implements GrammarPerformanceService 
     private List<String> findSpecialStructure(List<CoreSentence> sentences){
         List<String> specialStructureList = new ArrayList<>();
         for (CoreSentence sentence : sentences) {
-
+            for (int i = 0; i < sentence.tokens().size(); ++i){
+                if(sentence.text().equalsIgnoreCase(RegexConstants.howSymbol + RegexConstants.empty + RegexConstants.todoSymbol)){
+                    specialStructureList.add(sentence.text());
+                }else {
+                    for(String whSymbol : RegexConstants.Companion.getWhSymbol()){
+                        if(sentence.text().contains(whSymbol + RegexConstants.empty + RegexConstants.todoSymbol)){
+                            specialStructureList.add(sentence.text());
+                        }else if(sentence.text().contains(whSymbol + RegexConstants.empty + RegexConstants.tobeSymbol)){
+                            specialStructureList.add(sentence.text());
+                        }
+                    }
+                }
+            }
         }
-        return null;
+        return Optional.ofNullable(specialStructureList).orElse(null);
     }
 }
