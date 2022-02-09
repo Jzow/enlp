@@ -1,3 +1,14 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2021 James Zow
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software
+ */
 package ai.james.api;
 
 import ai.james.common.enums.FileTypeEnum;
@@ -15,14 +26,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/10/16:00
- * @Description: 腾讯-全自动批改API
+ * 腾讯-全自动批改API
  */
 @RequestMapping("tencent")
 @RestController
 @RequiredArgsConstructor
-@Api(tags = "腾讯demo")
+@Api(tags = "腾讯")
 public class TencentCorrectionController {
 
     private final TencentCorrectionReportService tencentService;

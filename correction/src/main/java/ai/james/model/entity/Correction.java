@@ -1,3 +1,14 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2021 James Zow
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software
+ */
 package ai.james.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -9,19 +20,14 @@ import lombok.*;
 import java.io.Serializable;
 
 /**
- * <p>
- * 全自动批改表
- * </p>
- *
- * @author James Zow
- * @since 2022-01-06
+ * 全自动批改Entity实体
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(value="Correction对象", description="全自动批改表")
+@ApiModel(value="Correction对象", description="全自动批改Entity实体")
 public class Correction implements Serializable {
 
     private static final long serialVersionUID = 1L;
