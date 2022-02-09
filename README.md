@@ -1,12 +1,16 @@
 # Sword Come
 
-:rainbow:For English vocabulary analysis and sentence analysis in natural language, model training, intelligent response and emotion analysis reasoning are carried out through the analysis of data :)
+:rainbow:
+
+Phase I：English vocabulary analysis and sentence analysis in natural language
+
+Phase II：Model training, intelligent response and emotion analysis reasoning are carried out through the analysis of data :)
 
 
-## :pushpin: FAQ
+## :pushpin: General English label description
 
 <details> 
- <summary> <b>Stanford part of speech description</b> </summary>
+ <summary> <b>part of speech description</b> </summary>
  
 ```markdown
 1.	CC	协调连词
