@@ -17,10 +17,7 @@ import com.dtflys.forest.annotation.Body;
 import com.dtflys.forest.annotation.Post;
 
 /**
- * @author James Zow
- * @version 1.0
- * @description: TODO 自然语言处理算法 interface层
- * @date 2021/11/26 13:56
+ * 自然语言处理算法 业务三方服务 Python
  */
 public interface NLPAlgorithmService {
 

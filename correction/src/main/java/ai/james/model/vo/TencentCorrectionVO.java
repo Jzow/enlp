@@ -14,6 +14,7 @@ package ai.james.model.vo;
 import ai.james.model.bo.TencentScoreBO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
@@ -21,11 +22,10 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/19:48
- * @Description:
+ * 腾讯批改VO对象
  */
 @Data
+@ApiModel(value = "TencentCorrectionVO", description = "腾讯批改VO对象")
 public class TencentCorrectionVO implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -21,19 +21,14 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * <p>
- * 
- * </p>
- *
- * @author James Zow
- * @since 2022-01-10
+ * 腾讯批改详情Entity实体
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(value="TencentCorrectionDetail对象", description="")
+@ApiModel(value="TencentCorrectionDetail对象", description="腾讯批改详情Entity实体")
 public class TencentCorrectionDetail implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -16,9 +16,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/0:52
- * @Description:
+ * 词汇测试 信息Bo
  */
 @Data
 public class WordsTestBO {

@@ -23,12 +23,7 @@ import org.springframework.util.StringUtils;
 import java.util.List;
 
 /**
- * <p>
  * 全自动批改表 服务实现类
- * </p>
- *
- * @author James Zow
- * @since 2022-01-06
  */
 @Service
 @RequiredArgsConstructor

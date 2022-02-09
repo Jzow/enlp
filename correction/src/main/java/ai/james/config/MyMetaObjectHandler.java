@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 
 /**
- * 字段自动填充
+ * 字段自动填充配置
  *
  * @link https://mp.baomidou.com/guide/auto-fill-metainfo.html
  */

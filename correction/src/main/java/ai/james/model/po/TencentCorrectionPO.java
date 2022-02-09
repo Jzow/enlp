@@ -20,9 +20,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/12/14:37
- * @Description:
+ * 腾讯批改Po
  */
 @Data
 @Builder

@@ -22,12 +22,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * <p>
- *  腾讯批改ORM服务实现类
- * </p>
- *
- * @author James Zow
- * @since 2022-01-10
+ *  腾讯批改 服务实现类
  */
 @Service
 @RequiredArgsConstructor

@@ -13,6 +13,7 @@ package ai.james.model.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,16 +23,12 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * <p>
- * 
- * </p>
- *
- * @author James Zow
- * @since 2022-01-10
+ * 腾讯批改Entity实体
  */
 @Data
 @Builder
 @AllArgsConstructor
+@ApiModel(value = "TencentCorrection", description = "腾讯批改Entity实体")
 public class TencentCorrection implements Serializable {
 
     private static final long serialVersionUID = 1L;

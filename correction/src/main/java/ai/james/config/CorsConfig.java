@@ -18,9 +18,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/14:05
- * @Description:
+ * 跨域配置
  */
 @Configuration(proxyBeanMethods = false)
 public class CorsConfig {

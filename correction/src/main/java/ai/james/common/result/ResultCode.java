@@ -17,8 +17,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author pengmf
- * @since 2021/9/22
+ * 返回状态枚举
  */
 @AllArgsConstructor
 @NoArgsConstructor
@@ -89,6 +88,7 @@ public enum ResultCode implements IResultCode, Serializable {
                 return value;
             }
         }
-        return SYSTEM_EXECUTION_ERROR; // 默认系统执行错误
+        // 默认系统执行错误
+        return SYSTEM_EXECUTION_ERROR;
     }
 }

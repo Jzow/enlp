@@ -13,7 +13,6 @@ package ai.james.common.enums;
 
 /**
  * 文件上传枚举
- * @author James Zow
  */
 public enum FileTypeEnum {
 

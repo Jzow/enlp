@@ -18,6 +18,9 @@ import lombok.Data;
 
 import java.util.Arrays;
 
+/**
+ * 通用分页工具
+ */
 @Data
 public class BasePageQuery {
 

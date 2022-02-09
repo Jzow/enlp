@@ -16,8 +16,7 @@ import org.springframework.cglib.beans.BeanCopier;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * @author pengmf
- * @since 2021/11/5
+ * 通用Bean之间转换工具
  */
 public class BeanCopyUtil {
 

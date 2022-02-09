@@ -11,12 +11,6 @@
  */
 package ai.james.common.constant;
 
-/**
- * @author James Zow
- * @version 1.0
- * @description: TODO
- * @date 2021/11/25 21:37
- */
 public interface CorrectionConstants {
 
     String WRITING_ALGORITHM_PROD_URL = "https://www.taolipigai.com/apps.EDUCATE/EDUCATE/ajaxupload_new/";

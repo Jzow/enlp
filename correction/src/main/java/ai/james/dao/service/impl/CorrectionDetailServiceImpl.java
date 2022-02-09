@@ -18,12 +18,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author James Zow
- * @since 2022-01-06
+ *  批改详情 服务实现类
  */
 @Service
 public class CorrectionDetailServiceImpl extends ServiceImpl<CorrectionDetailMapper, CorrectionDetail> implements CorrectionDetailService {

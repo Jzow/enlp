@@ -20,19 +20,14 @@ import lombok.*;
 import java.io.Serializable;
 
 /**
- * <p>
- * 全自动批改表
- * </p>
- *
- * @author James Zow
- * @since 2022-01-06
+ * 全自动批改Entity实体
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(value="Correction对象", description="全自动批改表")
+@ApiModel(value="Correction对象", description="全自动批改Entity实体")
 public class Correction implements Serializable {
 
     private static final long serialVersionUID = 1L;

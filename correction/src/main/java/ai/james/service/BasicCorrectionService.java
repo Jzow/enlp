@@ -19,10 +19,7 @@ import ai.james.model.vo.WordsTestVO;
 import java.util.List;
 
 /**
- * @author James Zow
- * @version 1.json.0
- * @description: TODO
- * @date 2021/11/23 11:02
+ * 通用批改 服务类
  */
 public interface BasicCorrectionService {
 

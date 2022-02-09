@@ -18,9 +18,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/05/15:53
- * @Description:
+ * 词汇信息Bo
  */
 @Data
 @NoArgsConstructor

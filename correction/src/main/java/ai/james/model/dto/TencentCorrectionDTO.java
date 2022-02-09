@@ -19,16 +19,11 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * <p>
- * 
- * </p>
- *
- * @author James Zow
- * @since 2022-01-10
+ * 腾讯批改数据传输请求对象
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(value="TencentCorrectionDTO对象", description="")
+@ApiModel(value="TencentCorrectionDTO对象", description="腾讯批改数据传输请求对象")
 public class TencentCorrectionDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;

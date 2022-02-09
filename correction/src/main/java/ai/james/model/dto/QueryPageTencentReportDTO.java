@@ -22,9 +22,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/19:56
- * @Description:
+ * 分页排序查询报告对象
  */
 @Data
 @ApiModel(value="QueryPageTencentReportDTO", description="分页排序查询报告对象")

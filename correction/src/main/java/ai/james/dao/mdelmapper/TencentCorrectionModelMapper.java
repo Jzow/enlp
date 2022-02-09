@@ -18,9 +18,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/10/17:16
- * @Description:
+ * 腾讯批改Mapper mapstruct 转换接口
  */
 @Mapper
 public interface TencentCorrectionModelMapper {

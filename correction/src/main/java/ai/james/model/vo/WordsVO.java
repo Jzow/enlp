@@ -11,20 +11,20 @@
  */
 package ai.james.model.vo;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/06/19:16
- * @Description:
+ * 词汇VO对象
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ApiModel(value = "WordsVO", description = "词汇VO对象")
 public class WordsVO {
     private String word;
     private String wordType;

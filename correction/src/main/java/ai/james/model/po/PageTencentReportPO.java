@@ -18,9 +18,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/12/14:42
- * @Description:
+ * 腾讯分页报告Po
  */
 @Data
 public class PageTencentReportPO extends BasePageQuery implements Serializable {

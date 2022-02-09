@@ -25,9 +25,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Author: James Zow
- * @Date: 2021/12/28/18:00
- * @Description:
+ * 词汇表VO对象
  */
 @Data
 @Builder

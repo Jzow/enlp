@@ -12,8 +12,7 @@
 package ai.james.common.result;
 
 /**
- * @author pengmf
- * @since 2021/9/22
+ * 返回状态代码封装类
  */
 public interface IResultCode {
 

@@ -16,9 +16,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/22:06
- * @Description:
+ * @Description: 文件上传Properties定义
  */
 @ConfigurationProperties("com.prop")
 @Component

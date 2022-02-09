@@ -24,9 +24,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/19:37
- * @Description:
+ * 腾讯批改报告 服务类
  */
 public interface TencentCorrectionReportService {
 

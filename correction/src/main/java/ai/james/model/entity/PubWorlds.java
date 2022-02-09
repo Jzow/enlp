@@ -24,15 +24,13 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
- * @Author: James Zow
- * @Date: 2021/12/28/18:00
- * @Description:
+ * 词汇Entity实体
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ApiModel(value = "PubWorlds", description = "词汇表")
+@ApiModel(value = "PubWorlds", description = "词汇Entity实体")
 public class PubWorlds implements Serializable {
 
     private static final long serialVersionUID = 1L;

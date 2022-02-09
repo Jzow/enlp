@@ -34,18 +34,13 @@ spring:
       username: root
       password: zw123456~!
 
-# 持久层配置
 mybatis-plus:
   global-config:
     db-config:
-      #主键类型
       id-type: ASSIGN_ID
-      # 逻辑删除字段
       logic-delete-field: del_flag
       logic-delete-value: 1
       logic-not-delete-value: 0
-  # 枚举包扫描
-  # type-enums-package: ai.iston.common.enums
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 

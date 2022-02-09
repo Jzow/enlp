@@ -20,11 +20,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.web.multipart.MultipartFile;
 
-@ApiModel("文件上传返回数据对象")
+/**
+ * 文件上传返回数据对象
+ */
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel(value = "FileUpLoadVO", description = "文件上传返回数据对象")
 public class FileUpLoadVO {
 
     @JsonIgnore

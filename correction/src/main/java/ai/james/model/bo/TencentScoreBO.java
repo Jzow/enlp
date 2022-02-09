@@ -19,9 +19,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/11/21:36
- * @Description:
+ * 腾讯分数Bo
  */
 @Data
 @Builder

@@ -16,9 +16,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
- * @Author: James Zow
- * @Date: 2021/12/28/19:26
- * @Description:
+ * 查询词汇等级传输对象
  */
 @Data
 @ApiModel(value="QueryCorrectionDTO", description="查询词汇等级传输对象")

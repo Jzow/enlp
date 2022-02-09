@@ -19,12 +19,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author James Zow
- * @since 2022-01-06
+ * 批改模块 Mapper 接口
  */
 public interface CorrectionModuleMapper extends BaseMapper<CorrectionModule> {
 

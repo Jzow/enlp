@@ -21,11 +21,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author pengmf
- * @since 2021/9/22
+ * MyBatisPlus配置
  */
 @Configuration
-@MapperScan({"ai.iston.dao.*.mapper"})
+@MapperScan({"ai.james.dao.*.mapper"})
 @RequiredArgsConstructor
 public class MyBatisPlusConfiguration {
 

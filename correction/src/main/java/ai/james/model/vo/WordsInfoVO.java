@@ -11,6 +11,7 @@
  */
 package ai.james.model.vo;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,14 +20,13 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/06/19:15
- * @Description:
+ * 词汇信息VO对象
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ApiModel(value = "WordsInfoVO", description = "词汇信息VO对象")
 public class WordsInfoVO {
 
     private String sentenceId;

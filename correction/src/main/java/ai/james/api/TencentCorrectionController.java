@@ -26,14 +26,12 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/10/16:00
- * @Description: 腾讯-全自动批改API
+ * 腾讯-全自动批改API
  */
 @RequestMapping("tencent")
 @RestController
 @RequiredArgsConstructor
-@Api(tags = "腾讯demo")
+@Api(tags = "腾讯")
 public class TencentCorrectionController {
 
     private final TencentCorrectionReportService tencentService;

@@ -21,12 +21,7 @@ import org.springframework.util.StringUtils;
 import java.util.List;
 
 /**
- * <p>
- *  服务实现类
- * </p>
- *
- * @author James Zow
- * @since 2022-01-10
+ * 腾讯批改详情 服务实现类
  */
 @Service
 public class TencentCorrectionDetailServiceImpl extends ServiceImpl<TencentCorrectionDetailMapper, TencentCorrectionDetail> implements TencentCorrectionDetailService {

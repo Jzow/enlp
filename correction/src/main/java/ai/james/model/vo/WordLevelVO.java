@@ -11,6 +11,7 @@
  */
 package ai.james.model.vo;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,10 +19,14 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * 词汇等级VO对象
+ */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+@ApiModel(value = "WordLevelVO", description = "词汇等级VO对象")
 public class WordLevelVO {
 
     private String levelName;

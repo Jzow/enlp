@@ -19,12 +19,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import java.util.List;
 
 /**
- * <p>
- *  服务类
- * </p>
- *
- * @author James Zow
- * @since 2022-01-10
+ *  腾讯批改 服务类
  */
 public interface TencentCorrectionService extends IService<TencentCorrection> {
 

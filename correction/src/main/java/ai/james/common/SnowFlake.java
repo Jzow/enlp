@@ -12,8 +12,7 @@
 package ai.james.common;
 
 /**
- * @author pengmf
- * @since 2021/10/21
+ * 雪花ID生成工具
  */
 public class SnowFlake {
     /**
@@ -42,10 +41,22 @@ public class SnowFlake {
     private final static long datacenterIdShift = sequenceBits + workerIdBits;
     private final static long timestampShift = sequenceBits + workerIdBits + datacenterIdBits;
 
-    private long datacenterId; // 数据中心ID
-    private long workerId; // 机器ID
-    private long sequence = 0L; // 序列号
-    private long lastTimestamp = -1L; // 上一次时间戳
+    /**
+     * 数据中心ID
+     */
+    private long datacenterId;
+    /**
+     * 机器ID
+     */
+    private long workerId;
+    /**
+     * 序列号
+     */
+    private long sequence = 0L;
+    /**
+     * 上一次时间戳
+     */
+    private long lastTimestamp = -1L;
 
     private final static SnowFlake snowFlake=new SnowFlake(1,16);
 
@@ -78,10 +89,11 @@ public class SnowFlake {
         }
         lastTimestamp = timestamp;
 
-        return (timestamp - twepoch) << timestampShift // 时间戳部分
-                | datacenterId << datacenterIdShift // 数据中心部分
-                | workerId << workerIdShift // 机器标识部分
-                | sequence; // 序列号部分
+        // 返回 时间戳部分 数据中心部分 机器标识部分 序列号部分
+        return (timestamp - twepoch) << timestampShift
+                | datacenterId << datacenterIdShift
+                | workerId << workerIdShift
+                | sequence;
     }
 
     private long tilNextMillis() {

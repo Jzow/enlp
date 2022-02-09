@@ -27,8 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author pengmf
- * @since 2021/9/22
+ * 在线接口文档配置
  */
 @Configuration
 @EnableSwagger2
