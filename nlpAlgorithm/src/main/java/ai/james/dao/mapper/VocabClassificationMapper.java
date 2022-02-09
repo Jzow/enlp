@@ -15,9 +15,7 @@ import ai.james.model.entity.VocabClassification;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/25/13:43
- * @Description:
+ * 词汇分类 Mapper 接口
  */
 public interface VocabClassificationMapper extends BaseMapper<VocabClassification> {
 }

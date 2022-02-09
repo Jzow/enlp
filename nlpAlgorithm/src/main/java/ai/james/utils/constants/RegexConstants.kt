@@ -11,6 +11,9 @@
  */
 package ai.james.utils.constants
 
+/**
+ * 正则英文匹配 常量
+ */
 interface RegexConstants {
 
     companion object {

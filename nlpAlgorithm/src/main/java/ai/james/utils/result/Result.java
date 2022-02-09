@@ -16,8 +16,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author pengmf
- * @since 2021/9/22
+ * 返回状态代码封装类
  */
 @Data
 public class Result<T> implements Serializable {

@@ -15,9 +15,7 @@ import ai.james.model.entity.VocabLogicConnection;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/25/21:31
- * @Description:
+ * 词汇逻辑连贯词 Mapper 接口
  */
 public interface VocabLogicConnectionMapper extends BaseMapper<VocabLogicConnection> {
 }

@@ -20,9 +20,7 @@ import ai.james.model.vo.WordInfoVo;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/18/21:19
- * @Description:
+ * 词汇处理 服务接口
  */
 public interface WordProcessingService {
 

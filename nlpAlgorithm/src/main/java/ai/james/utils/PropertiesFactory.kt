@@ -13,6 +13,9 @@ package ai.james.utils
 
 import java.util.*
 
+/**
+ * Properties组装工具
+ */
 class PropertiesFactory {
 
     var key     : String? = null;

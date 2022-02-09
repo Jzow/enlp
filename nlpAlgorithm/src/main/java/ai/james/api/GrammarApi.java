@@ -26,9 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/30/15:43
- * @Description:
+ * NLP语法分析API
  */
 @RestController
 @Api(tags = "NLP语法分析")

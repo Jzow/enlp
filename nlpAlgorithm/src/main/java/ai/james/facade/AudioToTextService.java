@@ -20,9 +20,7 @@ import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/13/20:40
- * @Description: 音频和文本服务
+ * 音频和文本服务 外部接口 nacos上的服务
  */
 @FeignClient(value = "python-algorithm-service", configuration = FeignMultipartConfig.class, url = "http://192.168.1.66:8000/")
 public interface AudioToTextService {

@@ -11,6 +11,9 @@
  */
 package ai.james.utils.constants
 
+/**
+ * 词汇等级 常量
+ */
 interface WordLevelConstants {
 
     companion object {

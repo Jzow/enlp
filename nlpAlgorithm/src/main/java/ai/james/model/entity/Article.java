@@ -14,9 +14,7 @@ package ai.james.model.entity;
 import lombok.Data;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/21/17:51
- * @Description:
+ * 文章 Entity实体
  */
 @Data
 public class Article {

@@ -14,9 +14,7 @@ package ai.james.service;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/14/10:29
- * @Description:
+ * 语音 服务接口
  */
 public interface AudioService {
 

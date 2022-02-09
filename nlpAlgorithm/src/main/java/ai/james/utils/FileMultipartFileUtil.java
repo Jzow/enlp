@@ -19,9 +19,7 @@ import java.io.*;
 import java.util.Objects;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/14/10:48
- * @Description: 文件转换工具
+ * 文件转换工具
  */
 public class FileMultipartFileUtil {
 

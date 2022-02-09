@@ -16,9 +16,7 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/24/13:51
- * @Description:
+ * 单词解析信息Vo
  */
 @Data
 public class ParseWordVo {

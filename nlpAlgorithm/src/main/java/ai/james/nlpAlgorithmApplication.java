@@ -18,8 +18,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @author James Zow
- * @since 2021/12/28
+ * nlp算法应用程序Spring Boot启动类
  */
 @SpringBootApplication
 @EnableDiscoveryClient

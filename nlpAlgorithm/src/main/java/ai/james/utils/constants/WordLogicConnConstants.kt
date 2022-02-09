@@ -11,6 +11,9 @@
  */
 package ai.james.utils.constants
 
+/**
+ * 词汇逻辑连贯词 常量
+ */
 class WordLogicConnConstants {
 
     companion object {

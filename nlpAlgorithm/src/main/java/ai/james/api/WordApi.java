@@ -30,9 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/19/0:01
- * @Description:
+ * NLP词汇分析API
  */
 @RestController
 @Api(tags = "NLP词汇分析")

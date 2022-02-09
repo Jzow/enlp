@@ -21,9 +21,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/13/20:44
- * @Description:
+ * 音频算法API
  */
 @RestController
 @Api(tags = "音频算法")

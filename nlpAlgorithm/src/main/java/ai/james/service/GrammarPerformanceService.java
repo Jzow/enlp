@@ -17,9 +17,7 @@ import ai.james.model.vo.GrammarInfoVo;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/26/19:50
- * @Description:
+ * 语法表现 服务接口
  */
 public interface GrammarPerformanceService {
 

@@ -11,6 +11,9 @@
  */
 package ai.james.utils.constants
 
+/**
+ * 斯坦福tokenzi标记 常量
+ */
 interface AnnotatorConstants {
 
     companion object {

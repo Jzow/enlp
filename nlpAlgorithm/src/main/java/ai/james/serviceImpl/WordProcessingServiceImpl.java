@@ -48,9 +48,7 @@ import java.util.stream.Collectors;
 import static java.util.stream.Collectors.toList;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/18/21:19
- * @Description:
+ * 词汇处理 接口服务实现类
  */
 @Service
 @RequiredArgsConstructor

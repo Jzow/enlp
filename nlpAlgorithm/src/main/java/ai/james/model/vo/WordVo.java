@@ -16,9 +16,7 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/18/21:31
- * @Description:
+ * 单词Vo
  */
 @Data
 @Builder

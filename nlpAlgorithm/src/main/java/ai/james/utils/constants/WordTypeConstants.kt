@@ -11,6 +11,9 @@
  */
 package ai.james.utils.constants
 
+/**
+ * 词汇POS类型 常量
+ */
 interface WordTypeConstants {
 
     companion object {

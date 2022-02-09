@@ -17,8 +17,7 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * @author pengmf
- * @since 2021/9/22
+ * 返回状态枚举
  */
 @AllArgsConstructor
 @NoArgsConstructor

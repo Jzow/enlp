@@ -21,9 +21,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/25/21:35
- * @Description:
+ * 词汇逻辑连接词 服务实现类
  */
 @Service
 @RequiredArgsConstructor

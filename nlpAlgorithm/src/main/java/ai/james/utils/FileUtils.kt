@@ -16,6 +16,9 @@ import java.io.File
 import java.io.FileReader
 import kotlin.jvm.Throws
 
+/**
+ * 文件工具
+ */
 class FileUtils {
 
     @Throws(Exception::class)

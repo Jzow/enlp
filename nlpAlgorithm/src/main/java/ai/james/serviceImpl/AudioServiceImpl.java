@@ -25,9 +25,7 @@ import ws.schild.jave.encode.EncodingAttributes;
 import java.io.File;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/14/10:29
- * @Description:
+ * 语音 接口服务实现类
  */
 @Service
 @RequiredArgsConstructor

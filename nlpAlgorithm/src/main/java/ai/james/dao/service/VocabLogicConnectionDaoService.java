@@ -17,9 +17,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/25/21:32
- * @Description:
+ * 词汇逻辑连接词 服务类
  */
 public interface VocabLogicConnectionDaoService extends IService<VocabLogicConnection> {
 

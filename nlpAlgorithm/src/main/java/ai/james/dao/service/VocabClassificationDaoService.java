@@ -17,9 +17,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/25/13:57
- * @Description:
+ * 词汇分类 服务类
  */
 public interface VocabClassificationDaoService extends IService<VocabClassification> {
 

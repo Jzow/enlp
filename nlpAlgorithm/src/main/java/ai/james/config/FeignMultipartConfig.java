@@ -19,9 +19,7 @@ import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.context.annotation.Bean;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/13/20:58
- * @Description:
+ * feign配置
  */
 public class FeignMultipartConfig {
 

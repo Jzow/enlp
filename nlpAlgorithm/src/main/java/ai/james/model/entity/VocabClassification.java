@@ -14,9 +14,7 @@ package ai.james.model.entity;
 import lombok.Data;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/25/13:52
- * @Description:
+ * 词汇分类 Entity实体
  */
 @Data
 public class VocabClassification {

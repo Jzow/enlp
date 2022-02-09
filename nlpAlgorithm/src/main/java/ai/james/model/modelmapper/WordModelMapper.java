@@ -22,9 +22,7 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 
 /**
- * @Author: James Zow
- * @Date: 2022/01/21/21:12
- * @Description:
+ * 词汇模型 Mapstruct转换类
  */
 @Mapper
 public interface WordModelMapper {

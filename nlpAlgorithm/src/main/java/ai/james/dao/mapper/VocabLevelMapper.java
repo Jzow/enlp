@@ -17,12 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * <p>
- *  Mapper 接口
- * </p>
- *
- * @author James Zow
- * @since 2022-01-06
+ * 词汇等级 Mapper 接口
  */
 public interface VocabLevelMapper {
 
