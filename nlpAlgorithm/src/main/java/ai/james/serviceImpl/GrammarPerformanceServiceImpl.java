@@ -25,9 +25,10 @@ import edu.stanford.nlp.pipeline.CoreSentence;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.trees.Constituent;
 import edu.stanford.nlp.trees.LabeledScoredConstituentFactory;
+import edu.stanford.nlp.trees.Tree;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -37,6 +38,7 @@ import java.util.stream.Collectors;
 /**
  * 语法表现 接口服务实现类
  */
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class GrammarPerformanceServiceImpl implements GrammarPerformanceService {
@@ -120,11 +122,10 @@ public class GrammarPerformanceServiceImpl implements GrammarPerformanceService 
         List<String> clauseList = new ArrayList<>();
         for (CoreSentence sentence : sentences) {
             Set<Constituent> treeConstituents = sentence.constituencyParse().constituents(new LabeledScoredConstituentFactory());
-
+            Tree tree = sentence.constituencyParse();
             for (Constituent constituent : treeConstituents) {
                 if (constituent.label() != null && "SBAR".equals(constituent.label().toString())) {
-                    //  System.err.println(tree.getLeaves().subList(constituent.start(), constituent.end() + 1));
-                    //  clauseList.add(sentence.text() + "/");
+                    log.info("从句成分: {}", tree.getLeaves().subList(constituent.start(), constituent.end() + 1));
                     clauseList.add(sentence.text());
                 }
             }
@@ -183,5 +184,36 @@ public class GrammarPerformanceServiceImpl implements GrammarPerformanceService 
             }
         }
         return Optional.ofNullable(specialStructureList).orElse(null);
+    }
+
+    /**
+     * <p>
+     *    1. word,word,word 不作为分割条件。
+     *    2. 逗号分割前后满足语法规则（主谓宾，主谓，主系表 三者其一）
+     * </p>
+     *
+     * <p>逗号分割 方法
+     * @param sentences stanford core sentence list
+     * @return 返回 匹配逗号原则 分割的句子
+     */
+    private List<String> commaDivision(List<CoreSentence> sentences){
+        List<String> resultSentence = new ArrayList<>();
+
+        for (CoreSentence sentence : sentences) {
+            String sentText = sentence.text();
+            if(sentText.contains(RegexConstants.comma)){
+                List<String> sentWords = Arrays.asList(sentText.split(RegexConstants.empty));
+                for (int i = 0; i < sentWords.size(); i++) {
+                    if(sentWords.get(i).equals(RegexConstants.comma)){
+                        // 这里 后续需要补充条件2 2022-02-13
+                        if(!RegexConstants.comma.equals(sentWords.get(i + 2)) || !RegexConstants.comma.equals(sentWords.get(i - 2))) {
+                            resultSentence.addAll(Arrays.asList(sentText.split(RegexConstants.empty)));
+                        }
+                    }
+                }
+            }
+        }
+
+        return resultSentence;
     }
 }
