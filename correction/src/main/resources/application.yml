@@ -30,7 +30,7 @@ spring:
 
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/tencent?characterEncoding=UTF-8
+      url: jdbc:mysql://localhost:3306/tencent?characterEncoding=UTF-8&useSSL=false
       username: root
       password: zw123456~!
 

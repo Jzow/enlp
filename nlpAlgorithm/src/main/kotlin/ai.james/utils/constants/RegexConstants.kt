@@ -20,6 +20,8 @@ interface RegexConstants {
 
         const val empty: String         =   " ";
 
+        const val comma: String         =   ",";
+
         const val WhSymbol: String      =   "Wh";
 
         const val howSymbol: String     =   "how";
